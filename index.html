@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SANDRO LIMA | Tráfego Pago & Captação de Leads de Alta Performance</title>
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="Especialista em Tráfego Pago e Gestão de Performance. Escalamos negócios através de estratégias precisas no Google Ads e Meta Ads. Solicite seu diagnóstico grátis.">
+<meta name="keywords" content="Tráfego Pago, Gestão de Tráfego, Performance, Google Ads, Meta Ads, Sandro Lima, Escala de Negócios">
+<meta name="author" content="Sandro Lima">
+<link rel="canonical" href="https://sandrolima.com">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sandrolima.com">
+<meta property="og:title" content="SANDRO LIMA | Tráfego Pago & Performance">
+<meta property="og:description" content="Transformamos dados brutos em lucro escalável através de mentorias estratégicas e gestão de tráfego.">
+<meta property="og:image" content="images/perfil.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://sandrolima.com">
+<meta property="twitter:title" content="SANDRO LIMA | Tráfego Pago & Performance">
+<meta property="twitter:description" content="Escalando Negócios com Tráfego Pago de Alta Performance.">
+<meta property="twitter:image" content="images/perfil.png">
+
+<!-- Favicons & Mobile Icons -->
+<link rel="icon" type="image/png" href="images/perfil.png">
+<link rel="shortcut icon" href="images/perfil.png">
+<link rel="apple-touch-icon" href="images/perfil.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --surface: #111317;
+  --surface-dim: #111317;
+  --surface-bright: #37393e;
+  --surface-container-lowest: #0c0e12;
+  --surface-container-low: #1a1c20;
+  --surface-container: #1e2024;
+  --surface-container-high: #282a2e;
+  --surface-container-highest: #333539;
+  --on-surface: #e2e2e8;
+  --on-surface-variant: #c4c9ac;
+  --outline: #8e9379;
+  --outline-variant: #444933;
+  --primary: #ffffff;
+  --primary-container: #c3f400;
+  --on-primary-container: #283500;
+  --secondary: #c0c1ff;
+  --secondary-container: #3131c0;
+  --on-secondary-container: #b0b2ff;
+  --neon: #ccff00;
+  --background: #111317;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--background);
+  color: var(--on-surface);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* ── Noise overlay ── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 999;
+  opacity: .5;
+}
+
+/* ── TYPOGRAPHY ── */
+.font-grotesk { font-family: 'Space Grotesk', sans-serif; }
+.display-xl { font-family: 'Space Grotesk', sans-serif; font-size: clamp(2.5rem, 7vw, 4.5rem); font-weight: 700; line-height: 1.1; letter-spacing: -0.04em; }
+.headline-lg { font-family: 'Space Grotesk', sans-serif; font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 700; line-height: 1.2; letter-spacing: -0.02em; }
+.headline-md { font-family: 'Space Grotesk', sans-serif; font-size: clamp(1.2rem, 2.5vw, 2rem); font-weight: 600; line-height: 1.3; }
+.label-bold { font-family: 'Space Grotesk', sans-serif; font-size: 0.875rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; }
+.neon { color: var(--neon); }
+.muted { color: var(--on-surface-variant); }
+
+/* ── LAYOUT ── */
+.container { max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
+section { padding: 7rem 0; }
+
+/* ── NAV ── */
+header {
+  position: fixed; top: 0; left: 0; width: 100%; z-index: 50;
+  background: rgba(12,14,18,0.85);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+nav { max-width: 1280px; margin: 0 auto; padding: 0 2rem; height: 72px; display: flex; align-items: center; justify-content: space-between; }
+.logo { font-family: 'Space Grotesk', sans-serif; font-size: 1.25rem; font-weight: 900; color: var(--neon); letter-spacing: 0.08em; text-transform: uppercase; font-style: italic; }
+.brand-wrapper { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
+.profile-img { 
+  width: 40px; height: 40px; border-radius: 50%; 
+  border: 2px solid rgba(204, 255, 0, 0.5); 
+  object-fit: cover; 
+  box-shadow: 0 0 10px rgba(204, 255, 0, 0.2);
+  transition: transform 0.3s, border-color 0.3s;
+}
+.brand-wrapper:hover .profile-img { transform: scale(1.1); border-color: var(--neon); }
+.nav-links { display: flex; gap: 2rem; list-style: none; }
+.nav-links a { font-family: 'Space Grotesk', sans-serif; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(226,226,232,0.6); text-decoration: none; transition: color .2s; }
+.nav-links a:hover { color: #fff; }
+.btn-nav {
+  background: var(--neon); color: #1a2000;
+  font-family: 'Space Grotesk', sans-serif; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  border: none; padding: 0.65rem 1.5rem; border-radius: 4px; cursor: pointer;
+  transition: transform .2s, box-shadow .2s;
+}
+.btn-nav:hover { transform: scale(1.04); box-shadow: 0 0 18px rgba(204,255,0,0.35); }
+
+/* hamburger */
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; border: none; background: none; padding: 4px; }
+.hamburger span { display: block; width: 22px; height: 2px; background: #fff; transition: all .3s; }
+.mobile-menu { display: none; background: #0c0e12; border-top: 1px solid rgba(255,255,255,0.06); }
+.mobile-menu a { display: block; padding: 1rem 2rem; font-family: 'Space Grotesk', sans-serif; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(226,226,232,0.7); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.04); }
+
+/* ── HERO ── */
+#hero {
+  padding-top: 9rem; padding-bottom: 7rem;
+  background:
+    radial-gradient(ellipse 60% 50% at 80% 50%, rgba(49,49,192,0.12) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 60% at 10% 30%, rgba(204,255,0,0.07) 0%, transparent 60%);
+  position: relative; overflow: hidden;
+}
+.hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+.chip {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  background: rgba(204,255,0,0.08); border: 1px solid rgba(204,255,0,0.2);
+  color: var(--neon); font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+  padding: 0.4rem 0.9rem; border-radius: 999px; margin-bottom: 1.5rem;
+}
+.chip::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--neon); animation: pulse 1.5s infinite; }
+@keyframes pulse { 0%,100% { opacity:1 } 50% { opacity:.4 } }
+.hero-title { margin-bottom: 1.5rem; }
+.hero-desc { color: var(--on-surface-variant); font-size: 1.1rem; line-height: 1.7; margin-bottom: 2.5rem; max-width: 480px; }
+.btn-group { display: flex; gap: 1rem; flex-wrap: wrap; }
+.btn-primary {
+  background: var(--neon); color: #1a2000;
+  font-family: 'Space Grotesk', sans-serif; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  border: none; padding: 1rem 2rem; border-radius: 4px; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: .5rem;
+  transition: transform .2s, box-shadow .2s;
+}
+.btn-primary:hover { transform: scale(1.03); box-shadow: 0 0 24px rgba(204,255,0,0.4); }
+.btn-ghost {
+  background: transparent; color: #fff;
+  font-family: 'Space Grotesk', sans-serif; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  border: 1px solid rgba(255,255,255,0.25); padding: 1rem 2rem; border-radius: 4px; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: .5rem;
+  transition: border-color .2s, color .2s;
+}
+.btn-ghost:hover { border-color: var(--neon); color: var(--neon); }
+.hero-visual {
+  background: var(--surface-container-low);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 12px; padding: 2rem;
+  position: relative; overflow: hidden;
+}
+.hero-visual::before {
+  content: ''; position: absolute; top: -40px; right: -40px;
+  width: 200px; height: 200px;
+  background: radial-gradient(circle, rgba(204,255,0,0.15) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem; }
+.stat-box {
+  background: var(--surface-container);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 8px; padding: 1.25rem;
+}
+.stat-num { font-family: 'Space Grotesk', sans-serif; font-size: 2rem; font-weight: 700; color: var(--neon); }
+.stat-lbl { font-family: 'Space Grotesk', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--on-surface-variant); margin-top: .25rem; }
+.mini-chart { display: flex; align-items: flex-end; gap: 6px; height: 80px; background: var(--surface-container); border-radius: 8px; padding: 1rem; border: 1px solid rgba(255,255,255,0.05); }
+.bar { flex: 1; border-radius: 3px 3px 0 0; transition: opacity .2s; }
+.bar:hover { opacity: .8; }
+.bar-ind { background: linear-gradient(to top, var(--secondary-container), var(--secondary)); }
+.bar-neon { background: linear-gradient(to top, #86bb00, var(--neon)); box-shadow: 0 -8px 20px rgba(204,255,0,0.3); }
+
+/* ── SECTION HEADER ── */
+.section-header { text-align: center; margin-bottom: 4rem; }
+.section-label { display: inline-block; font-family: 'Space Grotesk', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--neon); margin-bottom: 1rem; }
+.section-header p { color: var(--on-surface-variant); font-size: 1.1rem; max-width: 560px; margin: 1rem auto 0; line-height: 1.7; }
+
+/* ── WHY ── */
+#why { background: var(--surface-container-lowest); }
+.why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.why-card {
+  background: var(--surface-container-low);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 12px; padding: 2rem;
+  transition: border-color .25s, box-shadow .25s, transform .25s;
+}
+.why-card:hover { border-color: rgba(204,255,0,0.2); box-shadow: 0 0 30px rgba(204,255,0,0.06); transform: translateY(-3px); }
+.icon-box {
+  width: 48px; height: 48px; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 1.25rem;
+  font-size: 1.4rem;
+}
+.icon-neon { background: rgba(204,255,0,0.1); }
+.icon-ind { background: rgba(49,49,192,0.2); }
+.icon-purple { background: rgba(105,0,179,0.2); }
+.why-card h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; font-weight: 600; color: #fff; margin-bottom: .6rem; }
+.why-card p { color: var(--on-surface-variant); font-size: 0.9rem; line-height: 1.6; }
+
+/* ── SERVICES ── */
+#services { background: var(--surface); }
+.services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+.svc-card {
+  background: var(--surface-container-low);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 12px; padding: 2rem; position: relative; overflow: hidden;
+  transition: border-color .25s, box-shadow .25s;
+}
+.svc-card:hover { border-color: rgba(204,255,0,0.15); box-shadow: 0 0 24px rgba(204,255,0,0.05); }
+.svc-card.featured { border-color: rgba(204,255,0,0.25); box-shadow: 0 0 30px rgba(204,255,0,0.08); }
+.svc-card.featured::after { content: 'DESTAQUE'; position: absolute; top: 1.25rem; right: 1.25rem; background: var(--neon); color: #1a2000; font-family: 'Space Grotesk',sans-serif; font-size: 0.6rem; font-weight: 700; letter-spacing: 0.12em; padding: .2rem .6rem; border-radius: 999px; }
+.svc-card h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1.3rem; font-weight: 700; color: #fff; margin-bottom: .5rem; }
+.svc-card .svc-sub { color: var(--neon); font-family: 'Space Grotesk',sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 1rem; }
+.svc-list { list-style: none; margin: 1.25rem 0; display: flex; flex-direction: column; gap: .6rem; }
+.svc-list li { display: flex; gap: .7rem; color: var(--on-surface-variant); font-size: 0.9rem; line-height: 1.5; }
+.svc-list li::before { content: '↗'; color: var(--neon); flex-shrink: 0; font-size: 0.85rem; margin-top: 1px; }
+.svc-card p { color: var(--on-surface-variant); font-size: 0.9rem; line-height: 1.6; }
+
+/* ── CAPTAÇÃO SECTION ── */
+#captacao { background: var(--surface-container-lowest); }
+.captacao-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+.captacao-items { display: flex; flex-direction: column; gap: 1.5rem; }
+.captacao-item {
+  background: var(--surface-container-low);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-left: 3px solid var(--neon);
+  border-radius: 0 8px 8px 0; padding: 1.5rem;
+}
+.captacao-item h4 { font-family: 'Space Grotesk', sans-serif; font-weight: 600; color: #fff; margin-bottom: .4rem; }
+.captacao-item p { color: var(--on-surface-variant); font-size: 0.88rem; line-height: 1.6; }
+.captacao-visual {
+  background: var(--surface-container-low);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 12px; padding: 2rem;
+}
+.flow-steps { display: flex; flex-direction: column; gap: 0; }
+.flow-step { display: flex; gap: 1rem; padding: 1.25rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); position: relative; }
+.flow-step:last-child { border-bottom: none; }
+.step-num {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: rgba(204,255,0,0.1); border: 1px solid rgba(204,255,0,0.3);
+  color: var(--neon); font-family: 'Space Grotesk', sans-serif; font-size: 0.8rem; font-weight: 700;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.flow-step h5 { font-family: 'Space Grotesk', sans-serif; font-weight: 600; color: #fff; margin-bottom: .3rem; }
+.flow-step p { color: var(--on-surface-variant); font-size: 0.85rem; line-height: 1.5; }
+
+/* ── WHATSAPP / AUTOMATION ── */
+#automacao { background: var(--surface); }
+.auto-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+.auto-card {
+  background: var(--surface-container-low);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 12px; padding: 1.75rem; text-align: center;
+  transition: border-color .25s, transform .25s;
+}
+.auto-card:hover { border-color: rgba(192,193,255,0.2); transform: translateY(-3px); }
+.auto-num { font-family: 'Space Grotesk', sans-serif; font-size: 2rem; font-weight: 700; color: var(--secondary); margin-bottom: 1rem; }
+.auto-card h4 { font-family: 'Space Grotesk', sans-serif; font-weight: 600; color: #fff; margin-bottom: .5rem; }
+.auto-card p { color: var(--on-surface-variant); font-size: 0.85rem; line-height: 1.5; }
+
+/* ── ROADMAP ── */
+#roadmap { background: var(--surface-container-lowest); }
+.timeline { position: relative; max-width: 900px; margin: 0 auto; }
+.timeline::before { content: ''; position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: linear-gradient(to bottom, transparent, rgba(204,255,0,0.3), transparent); transform: translateX(-50%); }
+.tl-item { display: flex; gap: 0; margin-bottom: 3rem; align-items: flex-start; }
+.tl-item:nth-child(odd) { flex-direction: row; }
+.tl-item:nth-child(even) { flex-direction: row-reverse; }
+.tl-content {
+  width: calc(50% - 2rem);
+  background: var(--surface-container-low);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 12px; padding: 1.75rem;
+  position: relative;
+}
+.tl-item:nth-child(odd) .tl-content { margin-right: auto; }
+.tl-item:nth-child(even) .tl-content { margin-left: auto; }
+.tl-dot {
+  position: absolute; left: 50%; top: 1.5rem; transform: translateX(-50%);
+  width: 16px; height: 16px; border-radius: 50%;
+  background: var(--neon); box-shadow: 0 0 16px rgba(204,255,0,0.6);
+  z-index: 2; flex-shrink: 0;
+}
+.tl-num { font-family: 'Space Grotesk', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--neon); margin-bottom: .5rem; }
+.tl-content h3 { font-family: 'Space Grotesk', sans-serif; font-weight: 600; color: #fff; margin-bottom: .5rem; }
+.tl-content p { color: var(--on-surface-variant); font-size: 0.88rem; line-height: 1.6; }
+
+/* ── RESULTS ── */
+#results { background: var(--surface); }
+.results-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+.stats-2col { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2.5rem; }
+.big-stat { border-left: 2px solid var(--neon); padding-left: 1.25rem; }
+.big-stat .num { font-family: 'Space Grotesk', sans-serif; font-size: 2.5rem; font-weight: 700; color: #fff; }
+.big-stat .lbl { font-family: 'Space Grotesk', sans-serif; font-size: 0.65rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--on-surface-variant); margin-top: .25rem; }
+.chart-visual {
+  background: var(--surface-container-high); border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 12px; padding: 2rem; display: flex; flex-direction: column;
+  gap: 1rem;
+}
+.chart-title { font-family: 'Space Grotesk', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--on-surface-variant); margin-bottom: .5rem; }
+.bars-container { display: flex; align-items: flex-end; gap: 8px; height: 160px; }
+.cbar { flex: 1; border-radius: 4px 4px 0 0; position: relative; }
+.cbar-label { position: absolute; top: -1.5rem; left: 50%; transform: translateX(-50%); font-family: 'Space Grotesk', sans-serif; font-size: 0.6rem; font-weight: 700; color: var(--on-surface-variant); white-space: nowrap; }
+.cbar-top { position: absolute; top: -2.5rem; left: 50%; transform: translateX(-50%); background: var(--neon); color: #1a2000; font-family: 'Space Grotesk',sans-serif; font-size: 0.6rem; font-weight: 700; padding: .15rem .5rem; border-radius: 4px; white-space: nowrap; }
+
+/* ── TOOLS ── */
+#tools { background: var(--surface-container-lowest); }
+.tools-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+.tool-card {
+  background: var(--surface-container-low);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 12px; padding: 1.5rem; text-align: center;
+  transition: border-color .25s;
+}
+.tool-card:hover { border-color: rgba(192,193,255,0.2); }
+.tool-icon { font-size: 1.75rem; margin-bottom: .75rem; }
+.tool-card h4 { font-family: 'Space Grotesk', sans-serif; font-weight: 600; color: #fff; margin-bottom: .4rem; font-size: .95rem; }
+.tool-card p { color: var(--on-surface-variant); font-size: 0.82rem; line-height: 1.5; }
+
+/* ── FAQ ── */
+#faq { background: var(--surface); }
+.faq-wrap { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem; }
+details {
+  background: var(--surface-container-low);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 12px; overflow: hidden;
+}
+details[open] { border-color: rgba(204,255,0,0.2); }
+summary {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 1.5rem; cursor: pointer; list-style: none;
+  font-family: 'Space Grotesk', sans-serif; font-size: 1rem; font-weight: 600; color: #fff;
+  transition: background .2s;
+}
+summary:hover { background: rgba(255,255,255,0.03); }
+summary::after { content: '+'; color: var(--neon); font-size: 1.4rem; font-weight: 300; transition: transform .3s; flex-shrink: 0; }
+details[open] summary::after { content: '−'; }
+.faq-body { padding: 0 1.5rem 1.5rem; color: var(--on-surface-variant); font-size: 0.93rem; line-height: 1.7; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1.25rem; }
+
+/* ── FINAL CTA ── */
+#cta {
+  padding: 7rem 2rem;
+  background: linear-gradient(135deg, rgba(204,255,0,0.05) 0%, rgba(49,49,192,0.08) 100%);
+}
+.cta-box {
+  max-width: 800px; margin: 0 auto;
+  background: var(--neon);
+  border-radius: 20px; padding: 5rem 4rem; text-align: center;
+  position: relative; overflow: hidden;
+  box-shadow: 0 30px 80px rgba(204,255,0,0.2);
+}
+.cta-box::before {
+  content: ''; position: absolute; top: -60px; right: -60px;
+  width: 250px; height: 250px;
+  background: rgba(255,255,255,0.1); border-radius: 50%;
+  pointer-events: none;
+}
+.cta-box h2 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 700; color: #1a2000; margin-bottom: 1rem; letter-spacing: -0.02em; text-transform: uppercase; }
+.cta-box p { color: rgba(26,32,0,0.7); font-size: 1.05rem; line-height: 1.7; margin-bottom: 2.5rem; }
+.btn-dark {
+  background: #0c0e12; color: #fff;
+  font-family: 'Space Grotesk', sans-serif; font-size: 0.85rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  border: none; padding: 1.1rem 2.5rem; border-radius: 999px; cursor: pointer;
+  display: inline-flex; align-items: center; gap: .6rem; text-decoration: none;
+  transition: transform .2s, box-shadow .2s;
+}
+.btn-dark:hover { transform: scale(1.04); box-shadow: 0 0 30px rgba(0,0,0,0.4); }
+.cta-note { margin-top: 1.25rem; font-size: 0.8rem; color: rgba(26,32,0,0.55); font-family: 'Space Grotesk', sans-serif; }
+
+/* ── FOOTER ── */
+footer {
+  background: var(--surface-container-lowest);
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.footer-top { padding: 4rem 0; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; }
+.footer-brand .logo { margin-bottom: 1rem; display: block; }
+.footer-brand p { color: var(--on-surface-variant); font-size: 0.88rem; line-height: 1.7; max-width: 280px; }
+.footer-social { display: flex; gap: .75rem; margin-top: 1.5rem; }
+.social-icon {
+  width: 36px; height: 36px; border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.1);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--on-surface-variant); font-size: 0.85rem; text-decoration: none;
+  transition: border-color .2s, color .2s;
+}
+.social-icon:hover { border-color: var(--neon); color: var(--neon); }
+.footer-col h5 { font-family: 'Space Grotesk', sans-serif; font-size: 0.75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #fff; margin-bottom: 1.25rem; }
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: .6rem; }
+.footer-col ul a { color: var(--on-surface-variant); font-size: 0.88rem; text-decoration: none; transition: color .2s; }
+.footer-col ul a:hover { color: #fff; }
+.footer-contact { color: var(--on-surface-variant); font-size: 0.88rem; display: flex; flex-direction: column; gap: .75rem; }
+.footer-contact a { color: var(--on-surface-variant); text-decoration: none; transition: color .2s; }
+.footer-contact a:hover { color: var(--neon); }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.05);
+  padding: 1.75rem 0;
+  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;
+}
+.footer-bottom p { font-family: 'Space Grotesk', sans-serif; font-size: 0.72rem; letter-spacing: .06em; color: rgba(226,226,232,0.35); text-transform: uppercase; }
+.footer-legal { display: flex; gap: 1.5rem; }
+.footer-legal a { font-family: 'Space Grotesk', sans-serif; font-size: 0.72rem; letter-spacing: .06em; text-transform: uppercase; color: rgba(226,226,232,0.35); text-decoration: none; transition: color .2s; }
+.footer-legal a:hover { color: rgba(226,226,232,0.7); }
+.lgpd-badge {
+  display: inline-flex; align-items: center; gap: .4rem;
+  background: rgba(204,255,0,0.07); border: 1px solid rgba(204,255,0,0.15);
+  color: var(--neon); font-family: 'Space Grotesk', sans-serif; font-size: 0.65rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+  padding: .3rem .7rem; border-radius: 4px;
+}
+
+/* ── FLOATING WHATSAPP ── */
+.wa-btn {
+  position: fixed; bottom: 2rem; right: 2rem; z-index: 100;
+  width: 56px; height: 56px; border-radius: 50%;
+  background: #25d366; box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+  display: flex; align-items: center; justify-content: center;
+  text-decoration: none; transition: transform .2s, box-shadow .2s;
+}
+.wa-btn:hover { transform: scale(1.1); box-shadow: 0 4px 30px rgba(37,211,102,0.6); }
+.wa-btn svg { width: 28px; height: 28px; fill: #fff; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1024px) {
+  .why-grid, .auto-grid, .tools-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 768px) {
+  section { padding: 4rem 0; }
+  .hero-grid, .services-grid, .captacao-grid, .results-inner { grid-template-columns: 1fr; }
+  .hero-visual { order: -1; }
+  .timeline::before { left: 1.5rem; }
+  .tl-item, .tl-item:nth-child(even) { flex-direction: column; padding-left: 3.5rem; }
+  .tl-content { width: 100%; }
+  .tl-dot { left: 1.5rem; top: .25rem; transform: none; }
+  .footer-top { grid-template-columns: 1fr 1fr; }
+  .nav-links, .btn-nav { display: none; }
+  .hamburger { display: flex; }
+  .why-grid, .auto-grid, .tools-grid { grid-template-columns: 1fr; }
+  .stats-2col { grid-template-columns: 1fr 1fr; }
+  .cta-box { padding: 3rem 2rem; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+}
+@media (max-width: 480px) {
+  .footer-top { grid-template-columns: 1fr; }
+  .stat-row { grid-template-columns: 1fr; }
+}
+
+/* ── ANIMATIONS ── */
+.fade-up { opacity: 0; transform: translateY(30px); transition: opacity .6s ease, transform .6s ease; }
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header>
+  <nav>
+    <a href="/" class="brand-wrapper">
+      <img src="public/images/perfil.png" alt="Sandro Lima" class="profile-img">
+      <span class="logo">SANDRO LIMA</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services">Serviços</a></li>
+      <li><a href="#captacao">Captação</a></li>
+      <li><a href="#roadmap">Processo</a></li>
+      <li><a href="#results">Resultados</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a href="https://api.whatsapp.com/send?phone=558183126809&text=Ol%C3%A1,%20quero%20saber%20mais%20sobre%20os%20servi%C3%A7os!" class="btn-nav" target="_blank">Diagnóstico Grátis</a>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#services" onclick="toggleMenu()">Serviços</a>
+    <a href="#captacao" onclick="toggleMenu()">Captação</a>
+    <a href="#roadmap" onclick="toggleMenu()">Processo</a>
+    <a href="#results" onclick="toggleMenu()">Resultados</a>
+    <a href="#faq" onclick="toggleMenu()">FAQ</a>
+    <a href="https://api.whatsapp.com/send?phone=558183126809" style="color:var(--neon)" target="_blank">→ Diagnóstico Grátis</a>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="chip">Performance & Growth</div>
+        <h1 class="display-xl hero-title">
+          Escalando Negócios com <span class="neon">Tráfego Pago</span> de Alta Performance
+        </h1>
+        <p class="hero-desc">
+          Transformamos dados brutos em lucro escalável através de mentorias estratégicas e gestão de tráfego com precisão algorítmica. Facebook Ads, Google Ads e muito mais.
+        </p>
+        <div class="btn-group">
+          <a href="https://api.whatsapp.com/send?phone=558183126809&text=Ol%C3%A1,%20quero%20um%20diagn%C3%B3stico%20gr%C3%A1tis!" class="btn-primary" target="_blank">
+            🚀 Solicitar Diagnóstico Grátis
+          </a>
+          <a href="#services" class="btn-ghost">Ver Serviços</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="stat-row">
+          <div class="stat-box">
+            <div class="stat-num">R$12M+</div>
+            <div class="stat-lbl">Investimento Gerenciado</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">4.8x</div>
+            <div class="stat-lbl">ROAS Médio</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">350%</div>
+            <div class="stat-lbl">Crescimento Lead-to-Sale</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">30+</div>
+            <div class="stat-lbl">Clientes Escalados</div>
+          </div>
+        </div>
+        <div class="mini-chart">
+          <div class="bar bar-ind" style="height:30%"></div>
+          <div class="bar bar-ind" style="height:45%"></div>
+          <div class="bar bar-ind" style="height:38%"></div>
+          <div class="bar bar-ind" style="height:60%"></div>
+          <div class="bar bar-ind" style="height:52%"></div>
+          <div class="bar bar-neon" style="height:95%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-label">Por que SANDRO LIMA?</span>
+      <h2 class="headline-lg">Resultados que <span class="neon">Falam por Si</span></h2>
+      <p>Não entregamos apenas cliques — entregamos crescimento previsível e escalável com estratégia e dados.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card fade-up">
+        <div class="icon-box icon-neon">📈</div>
+        <h3>Maximização de ROI</h3>
+        <p>Cada real investido é rastreado. Acompanhamos seu retorno em tempo real e ajustamos as campanhas para performance máxima.</p>
+      </div>
+      <div class="why-card fade-up">
+        <div class="icon-box icon-ind">🎯</div>
+        <h3>Segmentação Cirúrgica</h3>
+        <p>Encontramos seu cliente ideal — onde ele está, no momento exato de compra. Sem desperdício de verba, só resultado.</p>
+      </div>
+      <div class="why-card fade-up">
+        <div class="icon-box icon-purple">🔍</div>
+        <h3>Monitoramento 24/7</h3>
+        <p>Acesso a alertas e especialistas disponíveis para suas campanhas digitais em tempo real, todos os dias.</p>
+      </div>
+      <div class="why-card fade-up">
+        <div class="icon-box icon-neon">⚡</div>
+        <h3>Maior Alcance</h3>
+        <p>O tráfego pago coloca sua marca na frente de quem ainda não te conhece. Expanda além da sua audiência atual.</p>
+      </div>
+      <div class="why-card fade-up">
+        <div class="icon-box icon-ind">🔁</div>
+        <h3>Remarketing Inteligente</h3>
+        <p>Recuperamos visitantes que não converteram com anúncios personalizados e estratégias de retargeting avançadas.</p>
+      </div>
+      <div class="why-card fade-up">
+        <div class="icon-box icon-purple">📊</div>
+        <h3>Análise de Dados</h3>
+        <p>Tomamos decisões baseadas em dados concretos — não em achismos. Relatórios claros, transparentes e acionáveis.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-label">Serviços</span>
+      <h2 class="headline-lg">Gestão de <span class="neon">Tráfego Completa</span></h2>
+      <p>Do diagnóstico à escala, gerenciamos todo o seu ecossistema de anúncios pagos.</p>
+    </div>
+    <div class="services-grid">
+      <div class="svc-card featured fade-up">
+        <div class="svc-sub">Google Ads</div>
+        <h3>Gestão de Google Ads</h3>
+        <p>Capturamos a intenção de compra no exato momento em que o usuário pesquisa. Seus anúncios aparecem no topo para quem já quer comprar.</p>
+        <ul class="svc-list">
+          <li>Pesquisa, Display, Shopping e YouTube Ads</li>
+          <li>Palavras-chave de alta conversão selecionadas cirurgicamente</li>
+          <li>Lances automáticos com Machine Learning</li>
+          <li>Relatórios mensais detalhados de performance</li>
+        </ul>
+      </div>
+      <div class="svc-card fade-up">
+        <div class="svc-sub">Meta Ads</div>
+        <h3>Facebook & Instagram Ads</h3>
+        <p>Engajamos usuários no Instagram e Facebook com criativos persuasivos e segmentação de público avançada para escalar suas conversões.</p>
+        <ul class="svc-list">
+          <li>Campanhas de consciência, consideração e conversão</li>
+          <li>Lookalike Audiences e públicos personalizados</li>
+          <li>Testes A/B contínuos de criativos e copies</li>
+          <li>Pixel configurado e eventos rastreados corretamente</li>
+        </ul>
+      </div>
+      <div class="svc-card fade-up">
+        <div class="svc-sub">Remarketing</div>
+        <h3>Estratégias de Remarketing</h3>
+        <p>Recuperamos carrinhos abandonados, reengajamos visitantes e fidelizamos clientes com campanhas de retargeting ultra-personalizadas.</p>
+        <ul class="svc-list">
+          <li>Sequências de anúncios baseadas em comportamento</li>
+          <li>Recuperação de carrinhos com ofertas estratégicas</li>
+          <li>Segmentação por estágio do funil</li>
+          <li>Retargeting cross-platform (Google + Meta)</li>
+        </ul>
+      </div>
+      <div class="svc-card fade-up">
+        <div class="svc-sub">Mentoria</div>
+        <h3>Mentoria Estratégica Individual</h3>
+        <p>100% personalizada para o seu modelo de negócio. Chamadas semanais, revisão de contas e implementação de táticas exclusivas de escala.</p>
+        <ul class="svc-list">
+          <li>Análise comportamental do seu público-alvo</li>
+          <li>Processos customizados para seu nicho</li>
+          <li>Otimização contínua da taxa de conversão</li>
+          <li>Acesso direto via WhatsApp para dúvidas</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CAPTAÇÃO -->
+<section id="captacao">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-label">Captação de Leads</span>
+      <h2 class="headline-lg">Soluções Completas de <span class="neon">Captação</span></h2>
+      <p>Construímos sua base de clientes com captação qualificada, público-alvo preciso e comunicação direta via WhatsApp.</p>
+    </div>
+    <div class="captacao-grid">
+      <div class="captacao-items fade-up">
+        <div class="captacao-item">
+          <h4>📋 Perfis Personalizados</h4>
+          <p>Criamos perfis de clientes-alvo com base em características, interesses e comportamentos específicos do seu negócio.</p>
+        </div>
+        <div class="captacao-item">
+          <h4>🔬 Segmentação Avançada</h4>
+          <p>Identificamos os segmentos mais valiosos para sua empresa através de análises detalhadas de dados e comportamento.</p>
+        </div>
+        <div class="captacao-item">
+          <h4>📱 Extração de Contatos</h4>
+          <p>Capturamos leads ativos em grupos do WhatsApp, bases online e redes sociais relevantes ao seu nicho — em conformidade com a LGPD.</p>
+        </div>
+        <div class="captacao-item">
+          <h4>⚙️ Enriquecimento de Dados</h4>
+          <p>Complementamos os dados com informações relevantes para qualificação e segmentação mais assertiva.</p>
+        </div>
+      </div>
+      <div class="captacao-visual fade-up">
+        <h3 class="headline-md" style="color:#fff;margin-bottom:1.5rem">Mentoria de <span class="neon">Captação</span></h3>
+        <div class="flow-steps">
+          <div class="flow-step">
+            <div class="step-num">01</div>
+            <div>
+              <h5>Diagnóstico</h5>
+              <p>Analisamos seu processo atual de captação e identificamos oportunidades de crescimento imediato.</p>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="step-num">02</div>
+            <div>
+              <h5>Estratégia</h5>
+              <p>Desenvolvemos um plano personalizado para aumentar a geração e qualificação de leads.</p>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="step-num">03</div>
+            <div>
+              <h5>Implementação</h5>
+              <p>Acompanhamos cada passo da implementação com orientação técnica especializada.</p>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="step-num">04</div>
+            <div>
+              <h5>Otimização Contínua</h5>
+              <p>Monitoramos e ajustamos continuamente a estratégia para maximizar conversões.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AUTOMAÇÃO WHATSAPP -->
+<section id="automacao">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-label">Automação WhatsApp</span>
+      <h2 class="headline-lg">Comunicação Direta via <span class="neon">WhatsApp</span></h2>
+      <p>Automatize o atendimento, qualifique leads 24h por dia e aumente drasticamente sua taxa de conversão.</p>
+    </div>
+    <div class="auto-grid">
+      <div class="auto-card fade-up">
+        <div class="auto-num">01</div>
+        <h4>Atendimento 24/7</h4>
+        <p>Resposta imediata a todos os contatos, mesmo fora do horário comercial. Nenhum lead perdido.</p>
+      </div>
+      <div class="auto-card fade-up">
+        <div class="auto-num">02</div>
+        <h4>Triagem Eficiente</h4>
+        <p>Classificação automática de leads com base em suas perguntas, interesses e estágio de compra.</p>
+      </div>
+      <div class="auto-card fade-up">
+        <div class="auto-num">03</div>
+        <h4>Experiência Personalizada</h4>
+        <p>Mensagens adaptadas ao perfil e necessidades de cada cliente potencial — não mensagens genéricas.</p>
+      </div>
+      <div class="auto-card fade-up">
+        <div class="auto-num">04</div>
+        <h4>Otimização Contínua</h4>
+        <p>Monitoramos e ajustamos as respostas automáticas para melhorar continuamente a taxa de conversão.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROADMAP -->
+<section id="roadmap">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-label">Roadmap da Mentoria</span>
+      <h2 class="headline-lg">O Caminho para <span class="neon">a Escala</span></h2>
+      <p>Um processo estruturado e comprovado para levar seu negócio do diagnóstico à dominância de mercado.</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-item fade-up">
+        <div class="tl-content">
+          <div class="tl-num">01 — Diagnóstico</div>
+          <h3>Análise Profunda</h3>
+          <p>Análise profunda da estrutura atual, contas de anúncio, KPIs e histórico de conversão. Identificamos os gaps e oportunidades de crescimento imediato.</p>
+        </div>
+        <div class="tl-dot"></div>
+      </div>
+      <div class="tl-item fade-up">
+        <div class="tl-content">
+          <div class="tl-num">02 — Estratégia</div>
+          <h3>Plano de Ataque</h3>
+          <p>Criamos o plano de guerrilha criativa: audiências, criativos e fluxo de conversão desenhados especificamente para o seu mercado e orçamento.</p>
+        </div>
+        <div class="tl-dot"></div>
+      </div>
+      <div class="tl-item fade-up">
+        <div class="tl-content">
+          <div class="tl-num">03 — Implementação</div>
+          <h3>Execução Cirúrgica</h3>
+          <p>Setup técnico completo e lançamento das campanhas. Acompanhamos cada etapa para garantir performance desde o primeiro dia.</p>
+        </div>
+        <div class="tl-dot"></div>
+      </div>
+      <div class="tl-item fade-up">
+        <div class="tl-content">
+          <div class="tl-num">04 — Escala</div>
+          <h3>Dominância de Mercado</h3>
+          <p>Ajuste fino de lances, expansão de orçamento e clonagem das campanhas vencedoras para dominar o mercado e escalar sem limite.</p>
+        </div>
+        <div class="tl-dot"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section id="results">
+  <div class="container">
+    <div class="results-inner">
+      <div class="fade-up">
+        <span class="section-label">Nossos Números</span>
+        <h2 class="headline-lg">Resultados que <span class="neon">Provam</span> Tudo</h2>
+        <p class="muted" style="margin-top:1rem;line-height:1.7;font-size:1rem">
+          Não entregamos apenas cliques. Entregamos crescimento previsível. No último trimestre, nossos clientes e mentorados atingiram uma média de 4.8x de ROAS.
+        </p>
+        <div class="stats-2col">
+          <div class="big-stat">
+            <div class="num">R$ 12M+</div>
+            <div class="lbl">Investimento Gerenciado</div>
+          </div>
+          <div class="big-stat">
+            <div class="num">350%</div>
+            <div class="lbl">Crescimento Lead-to-Sale</div>
+          </div>
+          <div class="big-stat">
+            <div class="num">4.8x</div>
+            <div class="lbl">ROAS Médio dos Clientes</div>
+          </div>
+          <div class="big-stat">
+            <div class="num">30-60d</div>
+            <div class="lbl">Para Performance Máxima</div>
+          </div>
+        </div>
+      </div>
+      <div class="chart-visual fade-up">
+        <div class="chart-title">Crescimento de ROAS — Últimos 6 Meses</div>
+        <div class="bars-container">
+          <div class="cbar bar-ind" style="height:28%">
+            <span class="cbar-label">JAN</span>
+          </div>
+          <div class="cbar bar-ind" style="height:40%">
+            <span class="cbar-label">FEV</span>
+          </div>
+          <div class="cbar bar-ind" style="height:38%">
+            <span class="cbar-label">MAR</span>
+          </div>
+          <div class="cbar bar-ind" style="height:62%">
+            <span class="cbar-label">ABR</span>
+          </div>
+          <div class="cbar bar-ind" style="height:75%">
+            <span class="cbar-label">MAI</span>
+          </div>
+          <div class="cbar bar-neon" style="height:95%">
+            <span class="cbar-label">JUN</span>
+            <span class="cbar-top">+124%</span>
+          </div>
+        </div>
+        <div style="margin-top:1.5rem;display:flex;flex-direction:column;gap:.75rem">
+          <div style="display:flex;justify-content:space-between;font-size:.82rem">
+            <span class="muted">Taxa de conversão média</span>
+            <span style="color:var(--neon);font-family:'Space Grotesk',sans-serif;font-weight:700">+87%</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:.82rem">
+            <span class="muted">Custo por Lead reduzido</span>
+            <span style="color:var(--neon);font-family:'Space Grotesk',sans-serif;font-weight:700">-43%</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:.82rem">
+            <span class="muted">Leads qualificados gerados</span>
+            <span style="color:var(--neon);font-family:'Space Grotesk',sans-serif;font-weight:700">+215%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section id="tools">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-label">Ferramentas & Tecnologias</span>
+      <h2 class="headline-lg">Tecnologia de <span class="neon">Ponta</span> a Seu Favor</h2>
+      <p>Usamos as melhores ferramentas do mercado para maximizar seus resultados.</p>
+    </div>
+    <div class="tools-grid">
+      <div class="tool-card fade-up">
+        <div class="tool-icon">🗃️</div>
+        <h4>CRM Avançado</h4>
+        <p>Gestão centralizada de contatos, leads e oportunidades em um único painel.</p>
+      </div>
+      <div class="tool-card fade-up">
+        <div class="tool-icon">🤖</div>
+        <h4>Chatbots WhatsApp</h4>
+        <p>Automação inteligente de respostas e atendimento para nunca perder um lead.</p>
+      </div>
+      <div class="tool-card fade-up">
+        <div class="tool-icon">📉</div>
+        <h4>Análise de Dados</h4>
+        <p>Monitoramento e otimização contínua dos resultados com dashboards em tempo real.</p>
+      </div>
+      <div class="tool-card fade-up">
+        <div class="tool-icon">📧</div>
+        <h4>Email Marketing</h4>
+        <p>Envio de campanhas de e-mail personalizadas integradas à sua estratégia de tráfego.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-label">Dúvidas Frequentes</span>
+      <h2 class="headline-lg">Perguntas <span class="neon">Frequentes</span></h2>
+    </div>
+    <div class="faq-wrap">
+      <details open>
+        <summary>Preciso de um orçamento mínimo para começar?</summary>
+        <div class="faq-body">Recomendamos um investimento mínimo mensal para que os algoritmos tenham dados suficientes para otimizar. Durante a consultoria gratuita, avaliamos seu nicho e sugerimos o valor ideal para sua realidade e objetivos.</div>
+      </details>
+      <details>
+        <summary>Como funciona a mentoria individual?</summary>
+        <div class="faq-body">A mentoria é 100% personalizada. Através de chamadas semanais, revisamos suas contas, corrigimos erros estratégicos e implementamos novas táticas de escala exclusivas para o seu modelo de negócio. Você também tem acesso direto via WhatsApp.</div>
+      </details>
+      <details>
+        <summary>Em quanto tempo vejo os primeiros resultados?</summary>
+        <div class="faq-body">Enquanto as campanhas geram tráfego imediato, a estabilização e otimização real costumam levar de 30 a 60 dias para atingir a performance máxima de ROAS. Campanhas de tráfego pago geram resultados desde o primeiro dia de veiculação.</div>
+      </details>
+      <details>
+        <summary>Vocês trabalham com quais plataformas?</summary>
+        <div class="faq-body">Trabalhamos com Google Ads (pesquisa, display, shopping, YouTube), Meta Ads (Facebook e Instagram), além de estratégias de captação via WhatsApp, email marketing e remarketing cross-platform.</div>
+      </details>
+      <details>
+        <summary>A captação de contatos via WhatsApp é legal?</summary>
+        <div class="faq-body">Sim. Garantimos que todos os contatos sejam obtidos de forma ética e em conformidade com a LGPD (Lei Geral de Proteção de Dados). Trabalhamos apenas com metodologias permitidas e transparentes.</div>
+      </details>
+      <details>
+        <summary>Quais são as vantagens do PPC (Pay-Per-Click)?</summary>
+        <div class="faq-body">Com PPC você tem maior exposição de marca, atinge leads qualificados com precisão, melhora o ROI de forma mensurável e pode ajustar suas campanhas em tempo real com base nos dados. É a ferramenta mais eficiente para crescimento previsível e escalável.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section id="cta">
+  <div class="cta-box">
+    <p style="font-family:'Space Grotesk',sans-serif;font-size:0.7rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:rgba(26,32,0,0.5);margin-bottom:.75rem">Mentoria Individual — Vagas Limitadas</p>
+    <h2>Pronto para Dominar Seu Mercado?</h2>
+    <p>As vagas para mentoria individual são limitadas para garantir a qualidade e atenção em cada projeto. Não perca a sua oportunidade.</p>
+    <a href="https://api.whatsapp.com/send?phone=558183126809&text=Ol%C3%A1,%20quero%20solicitar%20meu%20diagn%C3%B3stico%20gr%C3%A1tis!" class="btn-dark" target="_blank">
+      🚀 Solicitar Diagnóstico Grátis
+    </a>
+    <p class="cta-note">Sem compromisso · Resposta em até 24h</p>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/" class="brand-wrapper">
+          <img src="public/images/perfil.png" alt="Sandro Lima" class="profile-img">
+          <span class="logo">SANDRO LIMA</span>
+        </a>
+        <p>Especialistas em tráfego pago, gestão de campanhas de redes sociais e captação de leads de alta performance. Transformamos dados em crescimento escalável.</p>
+        <div class="footer-social">
+          <a class="social-icon" href="https://www.instagram.com/" target="_blank" title="Instagram" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a class="social-icon" href="https://www.facebook.com/" target="_blank" title="Facebook" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a class="social-icon" href="https://api.whatsapp.com/send?phone=558183126809" target="_blank" title="WhatsApp" aria-label="WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Serviços</h5>
+        <ul>
+          <li><a href="#services">Google Ads</a></li>
+          <li><a href="#services">Facebook & Instagram Ads</a></li>
+          <li><a href="#services">Remarketing</a></li>
+          <li><a href="#captacao">Captação de Leads</a></li>
+          <li><a href="#automacao">Automação WhatsApp</a></li>
+          <li><a href="#services">Mentoria Individual</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Empresa</h5>
+        <ul>
+          <li><a href="#why">Por que nós</a></li>
+          <li><a href="#results">Resultados</a></li>
+          <li><a href="#roadmap">Nosso Processo</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#cta">Diagnóstico Grátis</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contato</h5>
+        <div class="footer-contact">
+          <a href="tel:+558183126809">📞 +55 81 8312-6809</a>
+          <a href="https://api.whatsapp.com/send?phone=558183126809" target="_blank">💬 WhatsApp</a>
+          <a href="mailto:sandrodelay@gmail.com">📧 sandrodelay@gmail.com</a>
+          <span>📍 Brasil</span>
+          <span style="margin-top:.5rem">
+            <span class="lgpd-badge">✓ LGPD Compliant</span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 SANDRO LIMA — High-Performance Traffic Solutions. Todos os direitos reservados.</p>
+      <div class="footer-legal">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a class="wa-btn" href="https://api.whatsapp.com/send?phone=558183126809&text=Ol%C3%A1,%20vim%20pelo%20site%20e%20quero%20saber%20mais!" target="_blank" title="Fale no WhatsApp" aria-label="WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+</a>
+
+<script>
+function toggleMenu() {
+  const menu = document.getElementById('mobileMenu');
+  menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+}
+
+// Fade-up on scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// Active nav highlight
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 100) current = s.id; });
+  navLinks.forEach(a => {
+    a.style.color = a.getAttribute('href') === '#' + current ? '#fff' : '';
+  });
+});
+</script>
+</body>
+</html>

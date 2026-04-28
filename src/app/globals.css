@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #111317;
+  --foreground: #e2e2e8;
+  --neon: #ccff00;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-inter overflow-x-hidden;
+  }
+
+  body::before {
+    content: '';
+    @apply fixed inset-0 pointer-events-none z-[999] opacity-[0.04];
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-neon text-[#1a2000] font-grotesk font-bold uppercase tracking-wider px-8 py-4 rounded-sm transition-all hover:scale-[1.03] hover:shadow-[0_0_24px_rgba(204,255,0,0.4)] flex items-center gap-2;
+  }
+
+  .btn-ghost {
+    @apply bg-transparent text-white font-grotesk font-bold uppercase tracking-wider px-8 py-4 rounded-sm border border-white/25 transition-all hover:border-neon hover:text-neon flex items-center gap-2;
+  }
+
+  .glass-header {
+    @apply sticky top-0 left-0 w-full z-50 bg-[#0c0e12]/85 backdrop-blur-xl border-b border-white/5;
+  }
+}
+
+.font-grotesk { font-family: 'Space Grotesk', sans-serif; }
+
+/* Custom animations from HTML */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

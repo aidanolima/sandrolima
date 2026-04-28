@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SANDRO LIMA | High-Performance Traffic Solutions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container": "#1e2024",
+                      "on-error": "#690005",
+                      "tertiary-container": "#f0dbff",
+                      "on-error-container": "#ffdad6",
+                      "surface-bright": "#37393e",
+                      "secondary-fixed": "#e1e0ff",
+                      "on-surface": "#e2e2e8",
+                      "surface": "#111317",
+                      "on-primary-fixed-variant": "#3c4d00",
+                      "on-primary": "#283500",
+                      "on-secondary": "#1000a9",
+                      "secondary-fixed-dim": "#c0c1ff",
+                      "error-container": "#93000a",
+                      "surface-container-low": "#1a1c20",
+                      "primary-fixed-dim": "#abd600",
+                      "surface-tint": "#abd600",
+                      "inverse-primary": "#506600",
+                      "surface-container-lowest": "#0c0e12",
+                      "primary-container": "#c3f400",
+                      "on-tertiary": "#490080",
+                      "error": "#ffb4ab",
+                      "on-surface-variant": "#c4c9ac",
+                      "on-secondary-fixed": "#07006c",
+                      "surface-variant": "#333539",
+                      "on-secondary-container": "#b0b2ff",
+                      "on-background": "#e2e2e8",
+                      "surface-container-highest": "#333539",
+                      "secondary-container": "#3131c0",
+                      "primary": "#ffffff",
+                      "inverse-surface": "#e2e2e8",
+                      "background": "#111317",
+                      "outline-variant": "#444933",
+                      "tertiary-fixed-dim": "#ddb7ff",
+                      "surface-dim": "#111317",
+                      "tertiary-fixed": "#f0dbff",
+                      "on-tertiary-fixed-variant": "#6900b3",
+                      "secondary": "#c0c1ff",
+                      "on-tertiary-container": "#8a33d9",
+                      "on-tertiary-fixed": "#2c0051",
+                      "on-primary-fixed": "#161e00",
+                      "outline": "#8e9379",
+                      "on-primary-container": "#556d00",
+                      "primary-fixed": "#c3f400",
+                      "surface-container-high": "#282a2e",
+                      "inverse-on-surface": "#2f3035",
+                      "on-secondary-fixed-variant": "#2f2ebe",
+                      "tertiary": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "container-max": "1280px",
+                      "card-gap": "24px",
+                      "section-padding": "120px",
+                      "base": "8px",
+                      "gutter": "32px"
+              },
+              "fontFamily": {
+                      "headline-md": ["Space Grotesk"],
+                      "label-bold": ["Space Grotesk"],
+                      "body-md": ["Inter"],
+                      "headline-lg": ["Space Grotesk"],
+                      "body-lg": ["Inter"],
+                      "display-xl": ["Space Grotesk"]
+              },
+              "fontSize": {
+                      "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "label-bold": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "display-xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glow-hover:hover {
+            box-shadow: 0 0 20px rgba(204, 255, 0, 0.2);
+        }
+        .bg-mesh {
+            background: radial-gradient(circle at 20% 30%, rgba(204, 255, 0, 0.05) 0%, transparent 40%),
+                        radial-gradient(circle at 80% 70%, rgba(49, 49, 192, 0.1) 0%, transparent 40%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800 shadow-[0_4px_30px_rgba(0,0,0,0.5)]">
+<div class="max-w-7xl mx-auto px-8 h-20 flex items-center justify-between">
+<div class="text-2xl font-black text-[#CCFF00] italic font-['Space_Grotesk'] uppercase tracking-wider">SANDRO LIMA</div>
+<nav class="hidden md:flex items-center gap-8 font-['Space_Grotesk'] uppercase tracking-wider font-bold">
+<a class="text-[#CCFF00] border-b-2 border-[#CCFF00] pb-1 cursor-pointer active:scale-95 transition-all" href="#services">Services</a>
+<a class="text-zinc-400 hover:text-white transition-colors cursor-pointer active:scale-95" href="#mentorship">Mentorship</a>
+<a class="text-zinc-400 hover:text-white transition-colors cursor-pointer active:scale-95" href="#results">Results</a>
+<a class="text-zinc-400 hover:text-white transition-colors cursor-pointer active:scale-95" href="#faq">FAQ</a>
+</nav>
+<button class="bg-primary-container text-on-primary-container px-6 py-3 font-label-bold text-label-bold rounded-lg hover:scale-105 hover:shadow-[0_0_15px_rgba(204,255,0,0.3)] transition-all duration-200 cursor-pointer active:scale-95 uppercase">
+                Free Strategy Call
+            </button>
+</div>
+</header>
+<main class="relative pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center justify-center overflow-hidden bg-mesh px-8">
+<div class="absolute inset-0 z-0">
+<img alt="Data Analytics" class="w-full h-full object-cover opacity-20 grayscale" data-alt="High-tech data dashboard with glowing charts and metrics on dark screens in a professional dark room setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARqnhB2xqgjAm-rlytxwMsudMxv-sRI8LjRJERAT7DnxCp8OV5kB1rflWixpHrQGTOlP8KoSk_Mi8MuMghP-dfIFpg5KEPOiNDiqlrd1oJgUz87waVkidhgCnFGiFkg6XP30QdZ921xqr5K0B5uLO6ZS_HDliTiZClvXipRFg7B9vO8sbhhwocDo3IIoYT_RO087WS24cHmYAn-sequZ4XD4zsxl3oDc0YUl-O3PjWdwF5ydfUXiMS81bNOeIoF_j0J6B6dj7-CpEM"/>
+<div class="absolute inset-0 bg-gradient-to-b from-background/50 via-background to-background"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto text-center">
+<span class="inline-block font-label-bold text-label-bold text-primary-container uppercase tracking-widest mb-6">Social Growth Engineering</span>
+<h1 class="font-display-xl text-display-xl md:text-[84px] text-white uppercase mb-8 leading-none">
+                    Escalando Negócios com <span class="text-primary-container">Tráfego Pago</span> de Alta Performance
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mx-auto mb-12">
+                    Transformamos dados brutos em lucro escalável através de mentorias estratégicas e gestão de tráfego com precisão algorítmica.
+                </p>
+<div class="flex flex-col md:flex-row items-center justify-center gap-6">
+<button class="bg-primary-container text-on-primary-container px-10 py-5 font-label-bold text-label-bold rounded-lg hover:scale-105 hover:shadow-[0_0_20px_rgba(204,255,0,0.4)] transition-all duration-300 uppercase">
+                        Agendar Consultoria
+                    </button>
+<button class="border border-white/20 text-white px-10 py-5 font-label-bold text-label-bold rounded-lg hover:bg-white/5 transition-all duration-300 uppercase">
+                        Ver Serviços
+                    </button>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-section-padding max-w-7xl mx-auto px-8" id="services">
+<div class="flex flex-col md:flex-row gap-gutter">
+<!-- Service 1: Gestão de Tráfego -->
+<div class="flex-1 bg-surface-container-low border border-outline-variant p-10 rounded-xl relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-container/5 rounded-full blur-3xl"></div>
+<h2 class="font-headline-lg text-headline-lg text-white mb-10">Gestão de <span class="text-primary-container">Tráfego</span></h2>
+<div class="grid gap-6">
+<div class="group p-6 bg-surface-container border border-outline-variant/30 rounded-lg hover:border-primary-container/50 transition-all duration-300">
+<span class="material-symbols-outlined text-primary-container mb-4 text-3xl">ads_click</span>
+<h3 class="font-headline-md text-headline-md text-white mb-2">Google Ads</h3>
+<p class="text-on-surface-variant">Domine o topo das buscas e capture intenção de compra imediata.</p>
+</div>
+<div class="group p-6 bg-surface-container border border-outline-variant/30 rounded-lg hover:border-primary-container/50 transition-all duration-300">
+<span class="material-symbols-outlined text-primary-container mb-4 text-3xl">campaign</span>
+<h3 class="font-headline-md text-headline-md text-white mb-2">Meta Ads</h3>
+<p class="text-on-surface-variant">Engajamento massivo no Instagram e Facebook com criativos persuasivos.</p>
+</div>
+<div class="group p-6 bg-surface-container border border-outline-variant/30 rounded-lg hover:border-primary-container/50 transition-all duration-300">
+<span class="material-symbols-outlined text-primary-container mb-4 text-3xl">refresh</span>
+<h3 class="font-headline-md text-headline-md text-white mb-2">Remarketing</h3>
+<p class="text-on-surface-variant">Persiga leads qualificados e multiplique sua taxa de conversão final.</p>
+</div>
+</div>
+</div>
+<!-- Service 2: Mentoria Estratégica -->
+<div class="flex-1 bg-surface-container-low border border-outline-variant p-10 rounded-xl relative overflow-hidden" id="mentorship">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary-container/10 rounded-full blur-3xl"></div>
+<h2 class="font-headline-lg text-headline-lg text-white mb-10">Mentoria <span class="text-secondary">Estratégica</span></h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="shrink-0 w-12 h-12 bg-secondary-container flex items-center justify-center rounded-lg">
+<span class="material-symbols-outlined text-white" data-weight="fill">groups</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-white mb-2">Público Alvo</h4>
+<p class="text-on-surface-variant">Mapeamento psicológico e comportamental do seu avatar ideal.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="shrink-0 w-12 h-12 bg-secondary-container flex items-center justify-center rounded-lg">
+<span class="material-symbols-outlined text-white" data-weight="fill">settings_suggest</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-white mb-2">Processos Customizados</h4>
+<p class="text-on-surface-variant">SOPs e workflows desenhados especificamente para a realidade do seu time.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="shrink-0 w-12 h-12 bg-secondary-container flex items-center justify-center rounded-lg">
+<span class="material-symbols-outlined text-white" data-weight="fill">query_stats</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-white mb-2">Otimização Contínua</h4>
+<p class="text-on-surface-variant">Cultura de testes A/B e análise de métricas para crescimento exponencial.</p>
+</div>
+</div>
+</div>
+<div class="mt-12 p-8 rounded-lg bg-secondary-container/20 border border-secondary-container/40">
+<p class="font-body-lg italic text-white/90">"A diferença entre gastar dinheiro e investir em tráfego é a estratégia por trás do clique."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Us -->
+<section class="py-section-padding bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-20">
+<h2 class="font-headline-lg text-headline-lg text-white uppercase mb-4">Por que a SANDRO LIMA?</h2>
+<div class="w-24 h-1 bg-primary-container mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-card-gap">
+<div class="p-10 border border-outline-variant hover:bg-surface-container transition-colors text-center">
+<span class="material-symbols-outlined text-5xl text-primary-container mb-6">trending_up</span>
+<h3 class="font-headline-md text-headline-md text-white mb-4">Maximização de ROI</h3>
+<p class="text-on-surface-variant">Foco total no retorno sobre investimento. Se não gera lucro, não é performance.</p>
+</div>
+<div class="p-10 border border-outline-variant hover:bg-surface-container transition-colors text-center">
+<span class="material-symbols-outlined text-5xl text-primary-container mb-6">biotech</span>
+<h3 class="font-headline-md text-headline-md text-white mb-4">Segmentação Cirúrgica</h3>
+<p class="text-on-surface-variant">Encontramos o seu cliente ideal onde quer que ele esteja, no momento exato da compra.</p>
+</div>
+<div class="p-10 border border-outline-variant hover:bg-surface-container transition-colors text-center">
+<span class="material-symbols-outlined text-5xl text-primary-container mb-6">monitoring</span>
+<h3 class="font-headline-md text-headline-md text-white mb-4">Monitoramento 24/7</h3>
+<p class="text-on-surface-variant">Nossos algoritmos e especialistas nunca dormem. Suas campanhas são vigiadas em tempo real.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Mentorship Roadmap -->
+<section class="py-section-padding max-w-5xl mx-auto px-8">
+<div class="text-center mb-20">
+<h2 class="font-headline-lg text-headline-lg text-white uppercase">Roadmap da Mentoria</h2>
+<p class="text-primary-container font-label-bold tracking-widest mt-2">O CAMINHO PARA A ESCALA</p>
+</div>
+<div class="relative">
+<!-- Vertical Line -->
+<div class="absolute left-1/2 -translate-x-1/2 w-px h-full bg-zinc-800"></div>
+<div class="space-y-24">
+<!-- Step 1 -->
+<div class="relative flex items-center justify-between">
+<div class="w-[45%] text-right pr-12">
+<h3 class="font-headline-md text-headline-md text-white">01. Diagnóstico</h3>
+<p class="text-on-surface-variant">Análise profunda da estrutura atual, canais e KPIs históricos.</p>
+</div>
+<div class="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-primary-container rounded-full shadow-[0_0_15px_rgba(204,255,0,0.8)] z-10"></div>
+<div class="w-[45%]"></div>
+</div>
+<!-- Step 2 -->
+<div class="relative flex items-center justify-between">
+<div class="w-[45%]"></div>
+<div class="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-primary-container rounded-full shadow-[0_0_15px_rgba(204,255,0,0.8)] z-10"></div>
+<div class="w-[45%] pl-12">
+<h3 class="font-headline-md text-headline-md text-white">02. Estratégia</h3>
+<p class="text-on-surface-variant">Criação do plano de guerra: criativos, audiências e funis de conversão.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative flex items-center justify-between">
+<div class="w-[45%] text-right pr-12">
+<h3 class="font-headline-md text-headline-md text-white">03. Implementação</h3>
+<p class="text-on-surface-variant">Setup técnico completo e lançamento da primeira fase de tração.</p>
+</div>
+<div class="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-primary-container rounded-full shadow-[0_0_15px_rgba(204,255,0,0.8)] z-10"></div>
+<div class="w-[45%]"></div>
+</div>
+<!-- Step 4 -->
+<div class="relative flex items-center justify-between">
+<div class="w-[45%]"></div>
+<div class="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-primary-container rounded-full shadow-[0_0_15px_rgba(204,255,0,0.8)] z-10"></div>
+<div class="w-[45%] pl-12">
+<h3 class="font-headline-md text-headline-md text-white">04. Escala</h3>
+<p class="text-on-surface-variant">Ajuste fino de lances e expansão de orçamento para dominar o mercado.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Results / Data Viz -->
+<section class="py-section-padding bg-zinc-900/30" id="results">
+<div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row items-center gap-16">
+<div class="flex-1">
+<h2 class="font-headline-lg text-headline-lg text-white mb-8">Nossos Números Falam Mais que <span class="text-primary-container">Palavras</span></h2>
+<p class="text-body-lg text-on-surface-variant mb-10">
+                        Não entregamos apenas cliques. Entregamos crescimento previsível. No último trimestre, nossos mentorados atingiram uma média de 4.8x de ROAS (Return on Ad Spend).
+                    </p>
+<div class="grid grid-cols-2 gap-8">
+<div class="border-l-2 border-primary-container pl-6">
+<div class="text-4xl font-bold text-white mb-2">R$ 12M+</div>
+<div class="text-sm text-on-surface-variant uppercase tracking-widest">Investimento Gerenciado</div>
+</div>
+<div class="border-l-2 border-primary-container pl-6">
+<div class="text-4xl font-bold text-white mb-2">350%</div>
+<div class="text-sm text-on-surface-variant uppercase tracking-widest">Crescimento Médio Lead-to-Sale</div>
+</div>
+</div>
+</div>
+<div class="flex-1 w-full aspect-square bg-surface-container-high rounded-xl border border-outline-variant p-8 relative overflow-hidden flex items-end gap-4">
+<div class="absolute inset-0 bg-gradient-to-tr from-secondary-container/10 to-transparent"></div>
+<!-- Mock 3D Bar Chart -->
+<div class="flex-1 bg-gradient-to-t from-secondary-container to-secondary h-[30%] rounded-t-lg relative group">
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 bg-white text-black px-2 py-1 rounded text-xs opacity-0 group-hover:opacity-100 transition-opacity">JAN</div>
+</div>
+<div class="flex-1 bg-gradient-to-t from-secondary-container to-secondary h-[45%] rounded-t-lg relative group">
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 bg-white text-black px-2 py-1 rounded text-xs opacity-0 group-hover:opacity-100 transition-opacity">FEV</div>
+</div>
+<div class="flex-1 bg-gradient-to-t from-secondary-container to-secondary h-[40%] rounded-t-lg relative group">
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 bg-white text-black px-2 py-1 rounded text-xs opacity-0 group-hover:opacity-100 transition-opacity">MAR</div>
+</div>
+<div class="flex-1 bg-gradient-to-t from-secondary-container to-secondary h-[70%] rounded-t-lg relative group">
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 bg-white text-black px-2 py-1 rounded text-xs opacity-0 group-hover:opacity-100 transition-opacity">ABR</div>
+</div>
+<div class="flex-1 bg-gradient-to-t from-primary-container to-[#B8E600] h-[95%] rounded-t-lg relative group shadow-[0_-10px_30px_rgba(204,255,0,0.3)]">
+<div class="absolute -top-12 left-1/2 -translate-x-1/2 bg-primary-container text-black font-bold px-3 py-1 rounded text-sm shadow-xl">+124%</div>
+</div>
+<img alt="Analytics View" class="hidden" data-alt="Sophisticated 3D data visualization chart showing rising bars in shades of neon lime and deep indigo against a dark tech background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD98FvvzdAt2XrrfyOT9WciHYkawtqtPTzAXKvov9xmu59QSGnfSf5JKsakRTw-t-IVYlsxZ-CjcTW76Wjo2zrvMsjg8MvwXWe9z7xPR8mrrIJSa1t7OlkCyPye6-IHddTAxf2AQXP0yzwwTEWhFKprfitJeA0u2mqQzcNNbVzRTzbQtDBFVUssCX2tYYpB0OZuHPntGzfrmSxGuELVuQV2elAp0KizukZjs7wTDd6ZIRLDjrJz3UpKassAgjVRvlbDoiBp3PAWJZgA"/>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-section-padding max-w-4xl mx-auto px-8" id="faq">
+<h2 class="font-headline-lg text-headline-lg text-white uppercase text-center mb-16">Perguntas Frequentes</h2>
+<div class="space-y-4">
+<details class="group bg-surface-container-low border border-outline-variant rounded-xl overflow-hidden" open="">
+<summary class="flex items-center justify-between p-6 cursor-pointer list-none font-headline-md text-white group-hover:bg-surface-container transition-colors">
+                        Preciso de um orçamento mínimo para começar?
+                        <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="p-6 pt-0 text-on-surface-variant border-t border-outline-variant/10">
+                        Recomendamos um investimento mínimo mensal para que os algoritmos tenham dados suficientes para otimizar. Durante a consultoria gratuita, avaliamos seu nicho e sugerimos o valor ideal para sua realidade.
+                    </div>
+</details>
+<details class="group bg-surface-container-low border border-outline-variant rounded-xl overflow-hidden">
+<summary class="flex items-center justify-between p-6 cursor-pointer list-none font-headline-md text-white group-hover:bg-surface-container transition-colors">
+                        Como funciona a mentoria individual?
+                        <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="p-6 pt-0 text-on-surface-variant border-t border-outline-variant/10">
+                        A mentoria é 100% personalizada. Através de chamadas semanais, revisamos suas contas, corrigimos erros estratégicos e implementamos novas táticas de escala exclusivas para o seu modelo de negócio.
+                    </div>
+</details>
+<details class="group bg-surface-container-low border border-outline-variant rounded-xl overflow-hidden">
+<summary class="flex items-center justify-between p-6 cursor-pointer list-none font-headline-md text-white group-hover:bg-surface-container transition-colors">
+                        Em quanto tempo vejo os primeiros resultados?
+                        <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="p-6 pt-0 text-on-surface-variant border-t border-outline-variant/10">
+                        Enquanto as campanhas geram tráfego imediato, a estabilização e otimização real costumam levar de 30 a 60 dias para atingir a performance máxima de ROAS.
+                    </div>
+</details>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-section-padding px-8">
+<div class="max-w-5xl mx-auto bg-primary-container p-12 md:p-20 rounded-3xl text-center relative overflow-hidden shadow-[0_20px_50px_rgba(204,255,0,0.2)]">
+<div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+<img alt="Texture" class="w-full h-full object-cover" data-alt="Subtle abstract mesh texture with glowing geometric patterns over a neon lime background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF7XMs9JOnGsijuUoO_WPOqPe_qxX0vTnWk4EKf0ghCKFd222gWq3w3gnsGcZ0JJmvyMt5ZiAsolVBune4pgsx64k0J6YEqA8EThtnFJ5XF6PaKAJ1Jxhmn6XIwUETyKpr_fkv7jWYwxCa8zSEpHWRjtMW6sH4irEgkwtnsPMYj2pDNj2svS2OL0tiNz7uj6uo4NdByYfDeq3ynXJwsORCKFRPraxTtL0fNE6jbngm6SSPpFzzhYVOkbSDiG4rdrrRuj1VbQ5L-AWK"/>
+</div>
+<h2 class="relative z-10 font-display-xl text-black uppercase mb-8">Pronto para dominar o seu mercado?</h2>
+<p class="relative z-10 text-xl text-black/80 font-medium mb-12 max-w-2xl mx-auto">As vagas para mentoria individual são limitadas para garantir a qualidade e atenção em cada projeto.</p>
+<button class="relative z-10 bg-black text-white px-12 py-6 font-label-bold text-lg rounded-full hover:scale-105 transition-all duration-300 uppercase shadow-2xl">
+                    Solicitar Diagnóstico Grátis
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 mt-32 bg-zinc-950 border-t border-zinc-800">
+<div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="text-xl font-bold text-white uppercase font-['Space_Grotesk']">SANDRO LIMA</div>
+<div class="font-['Space_Grotesk'] text-sm tracking-tight text-[#CCFF00] uppercase">
+                    © 2024 SANDRO LIMA. HIGH-PERFORMANCE TRAFFIC SOLUTIONS.
+                </div>
+</div>
+<div class="flex gap-8">
+<a class="font-['Space_Grotesk'] text-sm tracking-tight text-zinc-500 hover:text-white transition-all uppercase" href="#">Privacy Policy</a>
+<a class="font-['Space_Grotesk'] text-sm tracking-tight text-zinc-500 hover:text-white transition-all uppercase" href="#">Terms of Service</a>
+<a class="font-['Space_Grotesk'] text-sm tracking-tight text-zinc-500 hover:text-white transition-all uppercase" href="#">Cookies</a>
+</div>
+<div class="flex gap-4">
+<a class="w-10 h-10 border border-zinc-800 flex items-center justify-center rounded-full text-zinc-400 hover:text-[#CCFF00] hover:border-[#CCFF00] transition-all opacity-80 hover:opacity-100" href="#">
+<span class="material-symbols-outlined text-sm">share</span>
+</a>
+</div>
+</div>
+</footer>
+</body></html>
