@@ -56,7 +56,8 @@ export default function Home() {
       {/* WHY SECTION */}
       <section id="why" className="py-24 bg-[#0c0e12]">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-16 opacity-0 translate-y-8 animate-[fadeUp_0.6s_ease_forwards]">
+          {/* Aqui removemos o opacity-0 e as classes de animação que estavam escondendo o título */}
+          <div className="text-center mb-16">
             <span className="inline-block font-grotesk text-[0.7rem] font-bold tracking-[0.15em] uppercase text-[#ccff00] mb-4">
               Por que SANDRO LIMA?
             </span>

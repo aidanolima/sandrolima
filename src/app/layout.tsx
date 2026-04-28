@@ -94,7 +94,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className="scroll-smooth">
-      <body className={`${inter.variable} ${spaceGrotesk.variable} font-inter antialiased bg-[#111317] text-[#e2e2e8]`}>
+      {/* Basta adicionar o suppressHydrationWarning abaixo */}
+      <body 
+        className={`${inter.variable} ${spaceGrotesk.variable} font-inter antialiased bg-[#111317] text-[#e2e2e8]`}
+        suppressHydrationWarning
+      >
         {children}
       </body>
     </html>
