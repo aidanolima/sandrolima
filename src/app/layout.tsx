@@ -2,10 +2,20 @@ import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-grotesk" });
+const inter = Inter({ 
+  subsets: ["latin"], 
+  variable: "--font-inter",
+  display: "swap"
+});
+
+const spaceGrotesk = Space_Grotesk({ 
+  subsets: ["latin"], 
+  variable: "--font-grotesk",
+  display: "swap"
+});
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://sandrolima.com"), // Essencial para resolver URLs relativas das imagens
   title: "SANDRO LIMA | Tráfego Pago & Performance de Alta Escala",
   description: "Especialista em Tráfego Pago e Gestão de Performance. Escalamos negócios através de estratégias precisas no Google Ads e Meta Ads. Solicite seu diagnóstico grátis.",
   keywords: ["Tráfego Pago", "Gestão de Tráfego", "Performance", "Google Ads", "Meta Ads", "Sandro Lima", "Escala de Negócios", "Marketing Digital"],
@@ -51,8 +61,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
-      <body className={`${inter.variable} ${spaceGrotesk.variable} font-inter antialiased`}>
+    <html lang="pt-BR" className="scroll-smooth">
+      <body className={`${inter.variable} ${spaceGrotesk.variable} font-inter antialiased bg-[#111317] text-[#e2e2e8]`}>
         {children}
       </body>
     </html>
