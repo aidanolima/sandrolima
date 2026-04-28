@@ -5,8 +5,51 @@ import { MessageCircle } from "lucide-react";
 import Link from "next/link"; 
 
 export default function Home() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Sandro Lima | Tráfego Pago & Performance",
+    "image": "https://sandrolima.com/images/perfil.png",
+    "@id": "https://sandrolima.com",
+    "url": "https://sandrolima.com",
+    "telephone": "+558183126809",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "",
+      "addressLocality": "Recife",
+      "addressRegion": "PE",
+      "postalCode": "",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -8.047562,
+      "longitude": -34.877002
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    "sameAs": [
+      "https://www.instagram.com/sandrolima.ads",
+      "https://www.linkedin.com/in/sandrolima"
+    ]
+  };
+
   return (
     <main className="min-h-screen bg-[#111317] text-[#e2e2e8] font-sans">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Header />
       <Hero />
       

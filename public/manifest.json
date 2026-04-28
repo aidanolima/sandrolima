@@ -1,0 +1,23 @@
+{
+  "name": "Sandro Lima | Tráfego Pago & Performance",
+  "short_name": "Sandro Lima",
+  "description": "Especialista em Tráfego Pago e Gestão de Performance de Alta Escala.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111317",
+  "theme_color": "#ccff00",
+  "icons": [
+    {
+      "src": "/images/perfil.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/perfil.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
