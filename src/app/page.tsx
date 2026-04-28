@@ -2,7 +2,8 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 import { MessageCircle } from "lucide-react";
-import Link from "next/link";
+import Link from "next/link"; 
+
 
 export default function Home() {
   return (
