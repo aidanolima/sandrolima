@@ -3,9 +3,25 @@
 @tailwind utilities;
 
 :root {
-  --background: #111317;
-  --foreground: #e2e2e8;
-  --neon: #ccff00;
+  --background: 248 249 250;
+  --foreground: 12 14 18;
+  --neon: 204 255 0;
+  --surface: 255 255 255;
+  --surface-container: 233 236 239;
+  --surface-low: 241 243 245;
+  --surface-lowest: 248 249 250;
+  --surface-high: 222 226 230;
+}
+
+.dark {
+  --background: 17 19 23;
+  --foreground: 226 226 232;
+  --neon: 204 255 0;
+  --surface: 17 19 23;
+  --surface-container: 30 32 36;
+  --surface-low: 26 28 32;
+  --surface-lowest: 12 14 18;
+  --surface-high: 40 42 46;
 }
 
 @layer base {
@@ -26,11 +42,11 @@
   }
 
   .btn-ghost {
-    @apply bg-transparent text-white font-grotesk font-bold uppercase tracking-wider px-8 py-4 rounded-sm border border-white/25 transition-all hover:border-neon hover:text-neon flex items-center gap-2;
+    @apply bg-transparent text-foreground font-grotesk font-bold uppercase tracking-wider px-8 py-4 rounded-sm border border-foreground/25 transition-all hover:border-neon hover:text-neon flex items-center gap-2;
   }
 
   .glass-header {
-    @apply sticky top-0 left-0 w-full z-50 bg-[#0c0e12]/85 backdrop-blur-xl border-b border-white/5;
+    @apply sticky top-0 left-0 w-full z-50 bg-background/85 backdrop-blur-xl border-b border-foreground/5;
   }
 }
 

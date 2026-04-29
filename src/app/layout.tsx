@@ -87,19 +87,24 @@ export const metadata: Metadata = {
   category: 'technology',
 };
 
+import { ThemeProvider } from "@/components/ThemeProvider";
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className="scroll-smooth">
-      {/* Basta adicionar o suppressHydrationWarning abaixo */}
-      <body 
-        className={`${inter.variable} ${spaceGrotesk.variable} font-inter antialiased bg-[#111317] text-[#e2e2e8]`}
-        suppressHydrationWarning
-      >
-        {children}
+    <html lang="pt-BR" className="scroll-smooth" suppressHydrationWarning>
+      <body className={`${inter.variable} ${spaceGrotesk.variable} font-inter antialiased`}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

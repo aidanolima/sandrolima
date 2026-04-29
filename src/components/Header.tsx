@@ -14,6 +14,8 @@ const navLinks = [
   { name: "FAQ", href: "#faq" },
 ];
 
+import { ThemeToggle } from "./ThemeToggle";
+
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -27,7 +29,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-[#0c0e12]/85 backdrop-blur-xl border-b border-white/5 py-4' : 'bg-transparent py-6'}`}>
+    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-background/85 backdrop-blur-xl border-b border-foreground/5 py-4' : 'bg-transparent py-6'}`}>
       <nav className="container mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
           <div className="relative w-10 h-10 rounded-full border-2 border-neon/50 overflow-hidden transition-transform group-hover:scale-110 group-hover:border-neon shadow-[0_0_10px_rgba(204,255,0,0.2)]">
@@ -47,16 +49,17 @@ export default function Header() {
         <ul className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <li key={link.name}>
-              <Link href={link.href} className="font-grotesk text-[0.8rem] font-semibold uppercase tracking-widest text-foreground/60 hover:text-white transition-colors">
+              <Link href={link.href} className="font-grotesk text-[0.8rem] font-semibold uppercase tracking-widest text-foreground/60 hover:text-foreground transition-colors">
                 {link.name}
               </Link>
             </li>
           ))}
         </ul>
 
-        <div className="hidden md:block">
+        <div className="hidden md:flex items-center gap-4">
+          <ThemeToggle />
           <Link 
-            href="https://api.whatsapp.com/send?phone=558183126809" 
+            href="https://api.whatsapp.com/send?phone=558183126809&text=Ol%C3%A1%2C%20venho%20do%20portal%20Sandro%20Lima%2C%20e%20gostaria%20de%20receber%20informa%C3%A7%C3%B5es%20gerais%20sobre%20os%20seus%20servi%C3%A7os..." 
             target="_blank"
             className="bg-neon text-[#1a2000] font-grotesk text-[0.75rem] font-bold uppercase tracking-widest px-6 py-3 rounded-sm hover:scale-105 hover:shadow-[0_0_18px_rgba(204,255,0,0.35)] transition-all"
           >
@@ -65,30 +68,33 @@ export default function Header() {
         </div>
 
         {/* Mobile Toggle */}
-        <button 
-          className="md:hidden text-white p-2"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? <X /> : <Menu />}
-        </button>
+        <div className="flex items-center gap-2 md:hidden">
+          <ThemeToggle />
+          <button 
+            className="text-foreground p-2"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? <X /> : <Menu />}
+          </button>
+        </div>
       </nav>
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-[#0c0e12] border-t border-white/5 absolute top-full left-0 w-full animate-in slide-in-from-top duration-300">
+        <div className="md:hidden bg-background border-t border-foreground/5 absolute top-full left-0 w-full animate-in slide-in-from-top duration-300">
           <div className="flex flex-direction-column py-4 px-6 gap-4 flex-col">
             {navLinks.map((link) => (
               <Link 
                 key={link.name} 
                 href={link.href}
-                className="font-grotesk text-sm font-semibold uppercase tracking-widest text-foreground/70 py-3 border-b border-white/5"
+                className="font-grotesk text-sm font-semibold uppercase tracking-widest text-foreground/70 py-3 border-b border-foreground/5"
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}
               </Link>
             ))}
             <Link 
-              href="https://api.whatsapp.com/send?phone=558183126809"
+              href="https://api.whatsapp.com/send?phone=558183126809&text=Ol%C3%A1%2C%20venho%20do%20portal%20Sandro%20Lima%2C%20e%20gostaria%20de%20receber%20informa%C3%A7%C3%B5es%20gerais%20sobre%20os%20seus%20servi%C3%A7os..."
               target="_blank"
               className="text-neon font-grotesk text-sm font-bold uppercase tracking-widest py-3"
               onClick={() => setIsOpen(false)}

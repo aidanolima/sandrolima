@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: "class",
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,19 +10,19 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#111317",
-        foreground: "#e2e2e8",
+        background: "rgb(var(--background) / <alpha-value>)",
+        foreground: "rgb(var(--foreground) / <alpha-value>)",
         neon: {
-          DEFAULT: "#ccff00",
+          DEFAULT: "rgb(var(--neon) / <alpha-value>)",
           dim: "#abd600",
           light: "rgba(204, 255, 0, 0.1)",
         },
         surface: {
-          DEFAULT: "#111317",
-          container: "#1e2024",
-          low: "#1a1c20",
-          lowest: "#0c0e12",
-          high: "#282a2e",
+          DEFAULT: "rgb(var(--surface) / <alpha-value>)",
+          container: "rgb(var(--surface-container) / <alpha-value>)",
+          low: "rgb(var(--surface-low) / <alpha-value>)",
+          lowest: "rgb(var(--surface-lowest) / <alpha-value>)",
+          high: "rgb(var(--surface-high) / <alpha-value>)",
         },
         secondary: {
           DEFAULT: "#c0c1ff",

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Rocket } from "lucide-react";
 
 const stats = [
-  { value: "R$12M+", label: "Investimento Gerenciado" },
+  { value: "R$5000M+", label: "Investimento Gerenciado" },
   { value: "4.8x", label: "ROAS Médio" },
   { value: "350%", label: "Crescimento Lead-to-Sale" },
   { value: "30+", label: "Clientes Escalados" },
@@ -32,7 +32,7 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <Link href="https://api.whatsapp.com/send?phone=558183126809" target="_blank" className="btn-primary">
+              <Link href="https://api.whatsapp.com/send?phone=558183126809&text=Ol%C3%A1%2C%20venho%20do%20portal%20Sandro%20Lima%2C%20e%20gostaria%20de%20receber%20informa%C3%A7%C3%B5es%20gerais%20sobre%20os%20seus%20servi%C3%A7os..." target="_blank" className="btn-primary">
                 <Rocket size={18} />
                 Solicitar Diagnóstico Grátis
               </Link>
@@ -42,12 +42,12 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="bg-surface-low border border-white/5 rounded-xl p-8 relative overflow-hidden group">
+          <div className="bg-surface-low border border-foreground/5 rounded-xl p-8 relative overflow-hidden group">
             <div className="absolute top-0 right-0 w-48 h-48 bg-neon/10 blur-[60px] rounded-full -translate-y-1/2 translate-x-1/2" />
             
             <div className="grid grid-cols-2 gap-6 mb-8">
               {stats.map((stat) => (
-                <div key={stat.label} className="bg-surface-container border border-white/5 rounded-lg p-5">
+                <div key={stat.label} className="bg-surface-container border border-foreground/5 rounded-lg p-5">
                   <div className="font-grotesk text-3xl font-bold text-neon">{stat.value}</div>
                   <div className="font-grotesk text-[0.65rem] font-semibold uppercase tracking-widest text-foreground/50 mt-1">
                     {stat.label}
@@ -56,7 +56,7 @@ export default function Hero() {
               ))}
             </div>
 
-            <div className="bg-surface-container rounded-lg p-6 border border-white/5 h-32 flex items-end gap-2">
+            <div className="bg-surface-container rounded-lg p-6 border border-foreground/5 h-32 flex items-end gap-2">
               {[30, 45, 38, 60, 52, 95].map((height, i) => (
                 <div 
                   key={i} 

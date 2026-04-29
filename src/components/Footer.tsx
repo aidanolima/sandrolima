@@ -4,7 +4,7 @@ import { Instagram, Facebook, MessageCircle, Phone, Mail, MapPin, CheckCircle2 }
 
 export default function Footer() {
   return (
-    <footer className="bg-surface-lowest border-t border-white/5">
+    <footer className="bg-surface-lowest border-t border-foreground/5">
       <div className="container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
@@ -29,13 +29,13 @@ export default function Footer() {
               {[
                 { icon: <Instagram size={18} />, href: "https://instagram.com" },
                 { icon: <Facebook size={18} />, href: "https://facebook.com" },
-                { icon: <MessageCircle size={18} />, href: "https://api.whatsapp.com/send?phone=558183126809" },
+                { icon: <MessageCircle size={18} />, href: "https://api.whatsapp.com/send?phone=558183126809&text=Ol%C3%A1%2C%20venho%20do%20portal%20Sandro%20Lima%2C%20e%20gostaria%20de%20receber%20informa%C3%A7%C3%B5es%20gerais%20sobre%20os%20seus%20servi%C3%A7os..." },
               ].map((social, i) => (
                 <Link 
                   key={i} 
                   href={social.href} 
                   target="_blank"
-                  className="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-foreground/50 hover:border-neon hover:text-neon transition-all"
+                  className="w-9 h-9 rounded-full border border-foreground/10 flex items-center justify-center text-foreground/50 hover:border-neon hover:text-neon transition-all"
                 >
                   {social.icon}
                 </Link>
@@ -45,11 +45,11 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h5 className="font-grotesk text-[0.75rem] font-bold uppercase tracking-widest text-white mb-6">Serviços</h5>
+            <h5 className="font-grotesk text-[0.75rem] font-bold uppercase tracking-widest text-foreground mb-6">Serviços</h5>
             <ul className="space-y-3">
               {["Google Ads", "Facebook & Instagram Ads", "Remarketing", "Captação de Leads", "Automação WhatsApp", "Mentoria Individual"].map((item) => (
                 <li key={item}>
-                  <Link href="#services" className="text-foreground/50 text-sm hover:text-white transition-colors">
+                  <Link href="#services" className="text-foreground/50 text-sm hover:text-foreground transition-colors">
                     {item}
                   </Link>
                 </li>
@@ -59,11 +59,11 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h5 className="font-grotesk text-[0.75rem] font-bold uppercase tracking-widest text-white mb-6">Empresa</h5>
+            <h5 className="font-grotesk text-[0.75rem] font-bold uppercase tracking-widest text-foreground mb-6">Empresa</h5>
             <ul className="space-y-3">
               {["Por que nós", "Resultados", "Nosso Processo", "FAQ", "Diagnóstico Grátis"].map((item) => (
                 <li key={item}>
-                  <Link href={`#${item.toLowerCase().replace(/ /g, '-')}`} className="text-foreground/50 text-sm hover:text-white transition-colors">
+                  <Link href={`#${item.toLowerCase().replace(/ /g, '-')}`} className="text-foreground/50 text-sm hover:text-foreground transition-colors">
                     {item}
                   </Link>
                 </li>
@@ -73,12 +73,12 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h5 className="font-grotesk text-[0.75rem] font-bold uppercase tracking-widest text-white mb-6">Contato</h5>
+            <h5 className="font-grotesk text-[0.75rem] font-bold uppercase tracking-widest text-foreground mb-6">Contato</h5>
             <div className="space-y-4">
               <Link href="tel:+558183126809" className="flex items-center gap-3 text-foreground/50 text-sm hover:text-neon transition-colors">
                 <Phone size={16} /> +55 81 8312-6809
               </Link>
-              <Link href="https://api.whatsapp.com/send?phone=558183126809" target="_blank" className="flex items-center gap-3 text-foreground/50 text-sm hover:text-neon transition-colors">
+              <Link href="https://api.whatsapp.com/send?phone=558183126809&text=Ol%C3%A1%2C%20venho%20do%20portal%20Sandro%20Lima%2C%20e%20gostaria%20de%20receber%20informa%C3%A7%C3%B5es%20gerais%20sobre%20os%20seus%20servi%C3%A7os..." target="_blank" className="flex items-center gap-3 text-foreground/50 text-sm hover:text-neon transition-colors">
                 <MessageCircle size={16} /> WhatsApp
               </Link>
               <Link href="mailto:sandrodelay@gmail.com" className="flex items-center gap-3 text-foreground/50 text-sm hover:text-neon transition-colors">
@@ -96,17 +96,13 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
-          <p className="font-grotesk text-[0.72rem] tracking-wider text-white/20 uppercase">
-            © 2024 SANDRO LIMA — High-Performance Traffic Solutions. Todos os direitos reservados.
+        <div className="mt-16 pt-8 border-t border-foreground/5 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+          <p className="font-grotesk text-[0.72rem] tracking-wider text-foreground/40 uppercase">
+            © 2026 <Link href="https://aslsolucoestech.com.br/" target="_blank" className="hover:text-neon transition-colors">ASL Soluções Tech</Link>. Todos os direitos reservados.
           </p>
-          <div className="flex gap-6">
-            {["Política de Privacidade", "Termos de Uso", "Cookies"].map((legal) => (
-              <Link key={legal} href="#" className="font-grotesk text-[0.72rem] tracking-wider text-white/20 uppercase hover:text-white/40 transition-colors">
-                {legal}
-              </Link>
-            ))}
-          </div>
+          <p className="font-grotesk text-[0.72rem] tracking-wider text-foreground/40 uppercase">
+            Desenvolvido por <Link href="https://aidanolima.com.br/" target="_blank" className="hover:text-neon transition-colors">Áidano Lima</Link> com Next.js
+          </p>
         </div>
       </div>
     </footer>
