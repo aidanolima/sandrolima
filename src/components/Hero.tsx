@@ -2,8 +2,8 @@ import Link from "next/link";
 import { Rocket } from "lucide-react";
 
 const stats = [
-  { value: "R$5000M+", label: "Investimento Gerenciado" },
-  { value: "4.8x", label: "ROAS Médio" },
+  { value: "R$50M+", label: "Investimento Gerenciado" },
+  { value: "2.8x", label: "ROAS Médio" },
   { value: "350%", label: "Crescimento Lead-to-Sale" },
   { value: "30+", label: "Clientes Escalados" },
 ];
